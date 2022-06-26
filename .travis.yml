@@ -19,6 +19,12 @@ after_success:
   - docker push syedhusyn/multi-nginx
   - docker push syedhusyn/multi-server
   - docker push syedhusyn/multi-worker
+#
+#deploy:
+#  provider: script
+#  region: 'ap-southeast-2'
+#  app: 'multi-docler'
+
 
 deploy:
   provider: elasticbeanstalk
